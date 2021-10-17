@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nib_ct/views/home.dart';
+import 'package:nib_ct/views/senib.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,12 +13,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Nib APP',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: MyHomePage(),
-    );
+        initialRoute: '/',
+        debugShowCheckedModeBanner: false,
+        title: 'Nib APP',
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+        ),
+        routes: {
+          '/': (context) => MyHomePage(),
+          '/senib': (context) => const Senib(),
+        });
   }
 }

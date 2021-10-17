@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nib_ct/views/home.dart';
+import 'package:nib_ct/views/senib.dart';
 
 class NibAppBar extends StatefulWidget implements PreferredSizeWidget {
   const NibAppBar({Key? key})
@@ -8,7 +9,7 @@ class NibAppBar extends StatefulWidget implements PreferredSizeWidget {
 
   @override
   final Size preferredSize;
-  final Color color = const Color.fromARGB(255, 255, 204, 0); // default is 56.0
+  final Color color = const Color.fromARGB(255, 240, 204, 0); // default is 56.0
 
   @override
   _NibAppBarState createState() => _NibAppBarState();
@@ -44,10 +45,7 @@ class _NibAppBarState extends State<NibAppBar> {
                           fontWeight: FontWeight.bold),
                     ),
                     onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => MyHomePage()),
-                      );
+                      Navigator.pushNamed(context, "/");
                     },
                   ),
                   SizedBox(
@@ -81,7 +79,9 @@ class _NibAppBarState extends State<NibAppBar> {
                             color: Colors.white,
                             fontSize: 20,
                             fontWeight: FontWeight.bold)),
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.pushNamed(context, "/senib");
+                    },
                   ),
                   SizedBox(
                     width: 10,
