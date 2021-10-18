@@ -7,10 +7,27 @@ class Ofertas extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.yellow[100],
       appBar: NibAppBar(),
       body: ListView(
         children: <Widget>[
-          Image.asset("images/paginaemconstrucao.png"),
+          SizedBox(
+            height: 20,
+          ),
+          Center(
+            child: Container(
+              width: MediaQuery.of(context).size.width / 4,
+              child: Card(
+                child: ListTile(
+                  leading: Image.asset("images/pixlogo.jpeg"),
+                  title: Text(
+                    "nibcuritiba@gmail.com",
+                    style: TextStyle(fontSize: 18),
+                  ),
+                ),
+              ),
+            ),
+          )
         ],
       ),
     );
