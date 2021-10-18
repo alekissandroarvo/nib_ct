@@ -11,8 +11,17 @@ class Ofertas extends StatelessWidget {
       appBar: NibAppBar(),
       body: ListView(
         children: <Widget>[
-          SizedBox(
-            height: 20,
+          Container(
+            width: MediaQuery.of(context).size.width,
+            height: 80,
+            color: Color.fromARGB(255, 255, 140, 0),
+            child: Center(
+              child: Text("OFERTAS",
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 30,
+                      fontWeight: FontWeight.bold)),
+            ),
           ),
           Center(
             child: Container(

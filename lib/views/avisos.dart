@@ -28,7 +28,7 @@ class Avisos extends StatelessWidget {
             child: Card(
               child: ListTile(
                 title: Text(
-                  "Avisos semana",
+                  "Boletim Semanal",
                   style: TextStyle(fontSize: 18),
                 ),
                 onTap: () {
