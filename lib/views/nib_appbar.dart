@@ -57,7 +57,9 @@ class _NibAppBarState extends State<NibAppBar> {
                             color: Colors.white,
                             fontSize: 20,
                             fontWeight: FontWeight.bold)),
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.pushNamed(context, "/ministerios");
+                    },
                   ),
                   SizedBox(
                     width: 10,
@@ -68,7 +70,9 @@ class _NibAppBarState extends State<NibAppBar> {
                             color: Colors.white,
                             fontSize: 20,
                             fontWeight: FontWeight.bold)),
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.pushNamed(context, "/meditacao");
+                    },
                   ),
                   SizedBox(
                     width: 10,
@@ -92,7 +96,9 @@ class _NibAppBarState extends State<NibAppBar> {
                             color: Colors.white,
                             fontSize: 20,
                             fontWeight: FontWeight.bold)),
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.pushNamed(context, "/noitesespeciais");
+                    },
                   ),
                   SizedBox(
                     width: 10,
@@ -103,7 +109,9 @@ class _NibAppBarState extends State<NibAppBar> {
                             color: Colors.white,
                             fontSize: 20,
                             fontWeight: FontWeight.bold)),
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.pushNamed(context, "/ofertas");
+                    },
                   ),
                   SizedBox(
                     width: 10,
@@ -114,7 +122,9 @@ class _NibAppBarState extends State<NibAppBar> {
                             color: Colors.white,
                             fontSize: 20,
                             fontWeight: FontWeight.bold)),
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.pushNamed(context, "/avisos");
+                    },
                   ),
                   SizedBox(
                     width: 10,

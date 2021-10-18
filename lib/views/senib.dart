@@ -29,6 +29,7 @@ class Senib extends StatelessWidget {
               Column(
                 children: [
                   Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Container(
                         width: (MediaQuery.of(context).size.width) / 4,
@@ -52,10 +53,21 @@ class Senib extends StatelessWidget {
                             Container(
                               child: Card(
                                 child: ListTile(
-                                  title: Text("Aula 1"),
+                                  title: Text("Aula 1: Áudio"),
                                   onTap: () {
                                     launchURL(
-                                        "https://www.youtube.com/watch?v=vxYzhMYX4yQ&t=4s");
+                                        "https://www.dropbox.com/s/k45po2ln41nd2gc/1_5145399253291499950.m4a?dl=0");
+                                  },
+                                ),
+                              ),
+                            ),
+                            Container(
+                              child: Card(
+                                child: ListTile(
+                                  title: Text("Aula 1: PDF"),
+                                  onTap: () {
+                                    launchURL(
+                                        "https://www.dropbox.com/s/h8005ympr5keln2/aula1_coracaodediscipulo.pdf?dl=0");
                                   },
                                 ),
                               ),
