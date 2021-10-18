@@ -28,7 +28,7 @@ class Meditacao extends StatelessWidget {
             child: Card(
               child: ListTile(
                 title: Text(
-                  "Meditacao Adultos",
+                  "Meditação Adultos",
                   style: TextStyle(fontSize: 18),
                 ),
                 onTap: () {
@@ -42,7 +42,7 @@ class Meditacao extends StatelessWidget {
             child: Card(
               child: ListTile(
                 title: Text(
-                  "Meditacao Teens",
+                  "Meditação Teens",
                   style: TextStyle(fontSize: 18),
                 ),
                 onTap: () {
