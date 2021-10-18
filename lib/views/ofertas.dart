@@ -25,7 +25,7 @@ class Ofertas extends StatelessWidget {
           ),
           Center(
             child: Container(
-              width: MediaQuery.of(context).size.width / 4,
+              width: MediaQuery.of(context).size.width,
               child: Card(
                 child: ListTile(
                   leading: Image.asset("images/pixlogo.jpeg"),
