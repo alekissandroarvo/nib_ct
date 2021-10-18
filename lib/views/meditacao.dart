@@ -17,7 +17,7 @@ class Meditacao extends StatelessWidget {
             height: 80,
             color: Color.fromARGB(255, 255, 140, 0),
             child: Center(
-              child: Text("AVISOS",
+              child: Text("MEDITAÇÃO",
                   style: TextStyle(
                       color: Colors.white,
                       fontSize: 30,
